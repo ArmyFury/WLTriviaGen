@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WildLife Trivia Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <button id="toggle-dark" onclick="toggleDarkMode()">Dark Mode</button>
+    <h1>WildLife Trivia Generator</h1>
+    <div id="questions-container"></div>
+    <button class="main-btn" onclick="addQuestion()">➕ Add Question</button>
+    <button class="main-btn" onclick="generateYML()">📥 Generate YML</button>
+    <h3>Generated YML</h3>
+    <textarea id="yaml-output" rows="20" readonly></textarea>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

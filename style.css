@@ -1,0 +1,116 @@
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #333;
+    --block-bg: #fff;
+    --border-color: #ccc;
+    --accent-color: #007acc;
+  }
+  body.dark {
+    --bg-color: #1e1e1e;
+    --text-color: #f0f0f0;
+    --block-bg: #2d2d2d;
+    --border-color: #555;
+    --accent-color: #66aaff;
+  }
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  h1, h3 {
+    text-align: center;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .question-block {
+    background-color: var(--block-bg);
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .question-block label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .question-block input, .question-block select, .question-block button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+  }
+  .options-container {
+    margin-top: 10px;
+  }
+  .option-group {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .option-group input {
+    flex: 1;
+  }
+  .option-group button {
+    margin-left: 10px;
+    padding: 4px 8px; /* Smaller button */
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8em;
+  }
+  button.add-option {
+    margin-top: 10px;
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px;
+  }
+  button#toggle-dark {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    float: right;
+  }
+  button.main-btn {
+    margin-top: 20px;
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    background-color: var(--block-bg);
+    color: var(--text-color);
+  }
+
+  .rmvbtn{
+    max-width: 40px;
+    
+  }
